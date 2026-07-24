@@ -8,8 +8,12 @@ const Appointment = require('../src/models/mongodb/Appointment');
 const Note = require('../src/models/mongodb/Note');
 const AISummary = require('../src/models/mongodb/AISummary');
 
-const PATIENT_COUNT = 10000;
-const BATCH_SIZE = 1000;
+const PATIENT_COUNT = 100000;
+const BATCH_SIZE = 5000;
+
+// Patients near the front of the directory are given a long appointment history
+// so that the patient record screen has something substantial to render.
+const RICH_HISTORY_PATIENTS = 50;
 
 // The clinician dashboard and appointment screens were designed around these
 // names, so they are seeded first and keep the low patient ids.
@@ -144,7 +148,10 @@ const seed = async () => {
   let appointmentId = 1;
 
   for (const patient of patients) {
-    const visits = 2 + Math.floor(Math.random() * 3);
+    const visits =
+      patient.patientId <= RICH_HISTORY_PATIENTS
+        ? 12 + Math.floor(Math.random() * 7)
+        : 1 + Math.floor(Math.random() * 3);
     for (let v = 0; v < visits; v += 1) {
       const scheduledAt = randomDateWithin(730);
       appointments.push({
