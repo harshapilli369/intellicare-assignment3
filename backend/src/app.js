@@ -17,7 +17,47 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
-app.use(helmet());
+app.use(
+  helmet({
+    // Helmet's defaults allow any https origin for styles and fonts. That was
+    // only ever needed for the hosted font, which is now served from here, so
+    // the policy names this origin and nothing else.
+    contentSecurityPolicy: {
+      useDefaults: false,
+      directives: {
+        defaultSrc: ["'self'"],
+        baseUri: ["'self'"],
+        scriptSrc: ["'self'"],
+        // Inline styles remain permitted. React sets element styles directly
+        // and the date picker positions itself that way, so removing this
+        // would break the interface rather than harden it. Narrowing it
+        // properly means moving those to classes or nonces.
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        fontSrc: ["'self'"],
+        imgSrc: ["'self'", 'data:'],
+        connectSrc: ["'self'"],
+        objectSrc: ["'none'"],
+        frameAncestors: ["'none'"],
+        formAction: ["'self'"],
+        upgradeInsecureRequests: [],
+      },
+    },
+    // Neither is set by default. Both were reported by the scan.
+    crossOriginEmbedderPolicy: true,
+    referrerPolicy: { policy: 'no-referrer' },
+  })
+);
+
+// Helmet does not cover this header. Denies the browser features this
+// application never uses.
+app.use((req, res, next) => {
+  res.setHeader(
+    'Permissions-Policy',
+    'accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()'
+  );
+  next();
+});
+
 app.use(compression());
 app.use(morgan('dev'));
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
