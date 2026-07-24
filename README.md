@@ -12,6 +12,7 @@ own README explaining the contents and how to reproduce the results.
 | Deliverable | Location |
 |-------------|----------|
 | JMeter test plan, baseline and optimized results | [`jmeter/`](jmeter/) |
+| Lighthouse rendering measurements, before and after | [`lighthouse/`](lighthouse/) |
 | OWASP ZAP scan reports and remediation evidence | [`zap/`](zap/) |
 | Prometheus scrape config and Grafana dashboards | [`monitoring/`](monitoring/) |
 
