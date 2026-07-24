@@ -1,0 +1,38 @@
+IntelliCare - frontend build output, before and after code splitting
+Captured: 2026-07-24 17:53 UTC
+Command: npm run build --prefix frontend
+
+--- BASELINE: every route in one bundle ---
+
+  dist/index.html          0.63 kB | gzip:   0.37 kB
+  dist/assets/index.css   48.82 kB | gzip:   8.28 kB
+  dist/assets/index.js   487.39 kB | gzip: 144.93 kB
+
+  Downloaded to open the sign-in page: 536.21 kB (153.21 kB gzipped)
+
+--- OPTIMIZED: split per route ---
+
+  dist/index.html                 0.63 kB │ gzip:  0.37 kB
+  dist/assets/Dashboard.css      21.32 kB │ gzip:  3.03 kB
+  dist/assets/index.css          27.86 kB │ gzip:  5.69 kB
+  dist/assets/Login.js            2.01 kB │ gzip:  0.89 kB
+  dist/assets/Appointments.js     2.17 kB │ gzip:  0.99 kB
+  dist/assets/TopBar.js           3.82 kB │ gzip:  1.67 kB
+  dist/assets/PatientDetail.js    4.08 kB │ gzip:  1.39 kB
+  dist/assets/format.js          20.78 kB │ gzip:  5.88 kB
+  dist/assets/Patients.js        60.67 kB │ gzip: 18.18 kB
+  dist/assets/Dashboard.js      162.82 kB │ gzip: 39.90 kB
+  dist/assets/index.js          232.48 kB │ gzip: 79.33 kB
+
+  Downloaded to open the sign-in page:
+    index.js 232.48 + Login.js 2.01 + index.css 27.86 = 262.35 kB
+    gzipped: 79.33 + 0.89 + 5.69 = 85.91 kB
+
+  Deferred until the matching screen is opened:
+    Dashboard.js 162.82 kB   date picker
+    Patients.js   60.67 kB   data table
+    Dashboard.css 21.32 kB   date picker styles
+    format.js     20.78 kB   date formatting
+    PatientDetail.js, Appointments.js, TopBar.js
+
+  Entry payload reduced by 51 percent, or 44 percent gzipped.
