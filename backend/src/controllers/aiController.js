@@ -1,4 +1,5 @@
 const aiService = require('../services/aiService');
+const { invalidate } = require('../middleware/cache');
 const Patient = require('../models/mongodb/Patient');
 const Appointment = require('../models/mongodb/Appointment');
 const Note = require('../models/mongodb/Note');
@@ -97,6 +98,11 @@ const finalizeSummary = async (req, res, next) => {
     const { appointmentId } = req.params;
     const edits = req.body;
     const summary = await aiService.finalizeSummary(Number(appointmentId), edits);
+
+    // Finalizing adds the summary to the patient's released list, so any cached
+    // copy of that list is now wrong.
+    invalidate(`/api/ai/patient/${summary.patientId}/summaries`);
+
     res.json({ success: true, summary });
   } catch (err) {
     next(err);
