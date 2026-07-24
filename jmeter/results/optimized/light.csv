@@ -1,0 +1,911 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1784912271188,118,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,326,1,1,http://localhost:5000/api/auth/login,115,0,18
+1784912271842,5,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,1,1,http://localhost:5000/,5,0,0
+1784912272355,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,1,1,http://localhost:5000/assets/index.js,4,0,0
+1784912272869,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,1,1,http://localhost:5000/assets/index.css,3,0,0
+1784912273373,100,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1220,463,1,1,http://localhost:5000/api/dashboard/stats,100,0,0
+1784912273975,30,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10783,473,2,2,http://localhost:5000/api/patients?page=24&limit=20,30,0,0
+1784912274147,66,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,326,2,2,http://localhost:5000/api/auth/login,66,0,2
+1784912274520,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1161,482,2,2,http://localhost:5000/api/patients?search=lc&page=1&limit=20,8,0,0
+1784912274723,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,2,2,http://localhost:5000/,2,0,0
+1784912275035,11,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,11224,459,2,2,http://localhost:5000/api/patients/12,11,0,0
+1784912275236,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,2,2,http://localhost:5000/assets/index.js,3,0,0
+1784912275549,7,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1807,460,2,2,http://localhost:5000/api/appointments,7,0,0
+1784912275751,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,2,2,http://localhost:5000/assets/index.css,3,0,0
+1784912276062,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,2,2,http://localhost:5000/api/auth/login,65,0,0
+1784912276255,4,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,2,2,http://localhost:5000/api/dashboard/stats,4,0,0
+1784912276628,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,2,2,http://localhost:5000/,2,0,0
+1784912276762,25,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10697,472,3,3,http://localhost:5000/api/patients?page=1&limit=20,25,0,0
+1784912277132,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,3,3,http://localhost:5000/assets/index.js,3,0,0
+1784912277136,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,326,3,3,http://localhost:5000/api/auth/login,65,0,1
+1784912277291,7,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1161,482,3,3,http://localhost:5000/api/patients?search=xe&page=1&limit=20,7,0,0
+1784912277648,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,3,3,http://localhost:5000/assets/index.css,3,0,0
+1784912277710,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,3,3,http://localhost:5000/,3,0,0
+1784912277805,10,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10580,459,3,3,http://localhost:5000/api/patients/38,10,0,0
+1784912278162,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,3,3,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912278224,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,3,3,http://localhost:5000/assets/index.js,3,0,0
+1784912278331,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,3,3,http://localhost:5000/api/appointments,3,0,0
+1784912278675,24,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10886,472,3,3,http://localhost:5000/api/patients?page=7&limit=20,24,0,0
+1784912278737,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,3,3,http://localhost:5000/assets/index.css,2,0,0
+1784912278847,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,3,3,http://localhost:5000/api/auth/login,65,0,0
+1784912279200,7,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1161,482,3,3,http://localhost:5000/api/patients?search=fr&page=1&limit=20,7,0,0
+1784912279241,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,3,3,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912279414,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,3,3,http://localhost:5000/,3,0,0
+1784912279708,4,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10579,459,4,4,http://localhost:5000/api/patients/38,4,0,0
+1784912279744,24,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10660,473,4,4,http://localhost:5000/api/patients?page=10&limit=20,24,0,0
+1784912279919,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,4,4,http://localhost:5000/assets/index.js,2,0,0
+1784912280139,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,326,4,4,http://localhost:5000/api/auth/login,65,0,2
+1784912280215,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,4,4,http://localhost:5000/api/appointments,3,0,0
+1784912280278,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1161,482,4,4,http://localhost:5000/api/patients?search=ml&page=1&limit=20,6,0,0
+1784912280433,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,4,4,http://localhost:5000/assets/index.css,3,0,0
+1784912280727,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,4,4,http://localhost:5000/api/auth/login,65,0,0
+1784912280727,67,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,4,4,http://localhost:5000/,67,0,0
+1784912280788,12,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10603,458,4,4,http://localhost:5000/api/patients/9,12,0,0
+1784912280943,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,4,4,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912281302,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,4,4,http://localhost:5000/api/appointments,3,0,0
+1784912281302,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,4,4,http://localhost:5000/,4,0,0
+1784912281302,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,4,4,http://localhost:5000/assets/index.js,5,0,0
+1784912281459,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10835,473,4,4,http://localhost:5000/api/patients?page=28&limit=20,23,0,0
+1784912281815,65,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,4,4,http://localhost:5000/assets/index.css,65,0,0
+1784912281815,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,4,4,http://localhost:5000/api/auth/login,65,0,0
+1784912281815,67,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,4,4,http://localhost:5000/assets/index.js,66,0,0
+1784912281985,18,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10708,482,4,4,http://localhost:5000/api/patients?search=gu&page=1&limit=20,18,0,0
+1784912282383,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,4,4,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912282383,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,4,4,http://localhost:5000/,3,0,0
+1784912282383,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,4,4,http://localhost:5000/assets/index.css,4,0,0
+1784912282505,9,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,12440,459,4,4,http://localhost:5000/api/patients/13,9,0,0
+1784912282889,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,5,5,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912282888,5,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,5,5,http://localhost:5000/assets/index.js,5,0,0
+1784912282887,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10657,473,5,5,http://localhost:5000/api/patients?page=33&limit=20,22,0,0
+1784912283016,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,5,5,http://localhost:5000/api/appointments,2,0,0
+1784912283134,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,326,5,5,http://localhost:5000/api/auth/login,65,0,2
+1784912283398,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,5,5,http://localhost:5000/assets/index.css,4,0,0
+1784912283398,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10657,472,5,5,http://localhost:5000/api/patients?page=6&limit=20,23,0,0
+1784912283413,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1161,482,5,5,http://localhost:5000/api/patients?search=dx&page=1&limit=20,8,0,0
+1784912283522,66,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,5,5,http://localhost:5000/api/auth/login,66,0,0
+1784912283709,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,5,5,http://localhost:5000/,3,0,0
+1784912283911,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,5,5,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912283926,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10579,459,5,5,http://localhost:5000/api/patients/38,3,0,0
+1784912283926,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1161,482,5,5,http://localhost:5000/api/patients?search=zj&page=1&limit=20,8,0,0
+1784912284099,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,5,5,http://localhost:5000/,2,0,0
+1784912284223,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,5,5,http://localhost:5000/assets/index.js,3,0,0
+1784912284440,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,5,5,http://localhost:5000/api/appointments,2,0,0
+1784912284425,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10928,473,5,5,http://localhost:5000/api/patients?page=11&limit=20,23,0,0
+1784912284440,12,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,11781,459,5,5,http://localhost:5000/api/patients/24,12,0,0
+1784912284613,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,5,5,http://localhost:5000/assets/index.js,3,0,0
+1784912284737,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,5,5,http://localhost:5000/assets/index.css,2,0,0
+1784912284956,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,5,5,http://localhost:5000/api/appointments,4,0,0
+1784912284956,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1161,482,5,5,http://localhost:5000/api/patients?search=zf&page=1&limit=20,8,0,0
+1784912285127,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,5,5,http://localhost:5000/assets/index.css,3,0,0
+1784912285240,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,5,5,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912285461,69,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,5,5,http://localhost:5000/api/auth/login,69,0,0
+1784912285465,72,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,11221,459,5,5,http://localhost:5000/api/patients/45,72,0,0
+1784912285631,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,6,6,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912285743,22,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10669,472,6,6,http://localhost:5000/api/patients?page=5&limit=20,22,0,0
+1784912286032,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,6,6,http://localhost:5000/,2,0,0
+1784912286038,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,6,6,http://localhost:5000/api/appointments,2,0,0
+1784912286136,69,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,326,6,6,http://localhost:5000/api/auth/login,69,0,2
+1784912286136,73,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10820,473,6,6,http://localhost:5000/api/patients?page=46&limit=20,73,0,0
+1784912286276,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1161,482,6,6,http://localhost:5000/api/patients?search=rx&page=1&limit=20,6,0,0
+1784912286538,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,6,6,http://localhost:5000/assets/index.js,4,0,0
+1784912286554,60,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,6,6,http://localhost:5000/api/auth/login,60,0,0
+1784912284956,1674,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-4,text,true,,2279,489,6,6,http://localhost:5000/api/ai/pre-appointment/38,1674,0,0
+1784912286710,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,6,6,http://localhost:5000/,4,0,0
+1784912286710,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1161,482,6,6,http://localhost:5000/api/patients?search=rd&page=1&limit=20,6,0,0
+1784912286789,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10611,458,6,6,http://localhost:5000/api/patients/5,8,0,0
+1784912287054,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,6,6,http://localhost:5000/assets/index.css,2,0,0
+1784912287116,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,6,6,http://localhost:5000/,2,0,0
+1784912287133,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,6,6,http://localhost:5000/api/auth/login,61,0,0
+1784912287223,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,6,6,http://localhost:5000/assets/index.js,5,0,0
+1784912287223,9,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10555,459,6,6,http://localhost:5000/api/patients/28,9,0,0
+1784912287300,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,6,6,http://localhost:5000/api/appointments,2,0,0
+1784912287562,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,6,6,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912287624,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,6,6,http://localhost:5000/assets/index.js,3,0,0
+1784912287701,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,6,6,http://localhost:5000/,3,0,0
+1784912287733,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,6,6,http://localhost:5000/api/appointments,3,0,0
+1784912287733,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,6,6,http://localhost:5000/assets/index.css,3,0,0
+1784912287811,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,6,6,http://localhost:5000/api/auth/login,63,0,0
+1784912288076,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10683,473,6,6,http://localhost:5000/api/patients?page=38&limit=20,23,0,0
+1784912288139,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,6,6,http://localhost:5000/assets/index.css,2,0,0
+1784912288217,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,6,6,http://localhost:5000/assets/index.js,2,0,0
+1784912288248,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,6,6,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912288248,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,6,6,http://localhost:5000/api/auth/login,63,0,0
+1784912288375,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,6,6,http://localhost:5000/,3,0,0
+1784912288601,7,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1161,482,6,6,http://localhost:5000/api/patients?search=yz&page=1&limit=20,7,0,0
+1784912288643,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912288722,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,3,0,0
+1784912288752,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10656,472,7,7,http://localhost:5000/api/patients?page=6&limit=20,3,0,0
+1784912288814,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,7,7,http://localhost:5000/,2,0,0
+1784912288880,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,1,0,0
+1784912289110,9,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,12438,459,7,7,http://localhost:5000/api/patients/31,9,0,0
+1784912289136,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,326,7,7,http://localhost:5000/api/auth/login,62,0,1
+1784912289152,67,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10640,473,7,7,http://localhost:5000/api/patients?page=43&limit=20,67,0,0
+1784912289229,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912289261,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,7,7,http://localhost:5000/api/patients?search=tv&page=1&limit=20,5,0,0
+1784912289323,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,3,0,0
+1784912289386,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,3,0,0
+1784912289633,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,3,0,0
+1784912289711,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,7,7,http://localhost:5000/,2,0,0
+1784912289726,17,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10527,482,7,7,http://localhost:5000/api/patients?search=me&page=1&limit=20,17,0,0
+1784912289742,24,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10915,473,7,7,http://localhost:5000/api/patients?page=49&limit=20,24,0,0
+1784912289773,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10627,459,7,7,http://localhost:5000/api/patients/41,8,0,0
+1784912289835,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,2,0,0
+1784912289898,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912290149,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,7,7,http://localhost:5000/api/auth/login,62,0,0
+1784912290226,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,2,0,0
+1784912290257,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,8744,458,7,7,http://localhost:5000/api/patients/4,7,0,0
+1784912290273,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1161,482,7,7,http://localhost:5000/api/patients?search=vx&page=1&limit=20,6,0,0
+1784912290288,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,2,0,0
+1784912290349,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912290412,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10586,472,7,7,http://localhost:5000/api/patients?page=3&limit=20,23,0,0
+1784912290724,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,7,7,http://localhost:5000/,2,0,0
+1784912290739,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,2,0,0
+1784912290770,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,3,0,0
+1784912290786,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,11780,459,7,7,http://localhost:5000/api/patients/24,3,0,0
+1784912290802,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,7,7,http://localhost:5000/api/auth/login,62,0,0
+1784912290864,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10606,473,7,7,http://localhost:5000/api/patients?page=13&limit=20,20,0,0
+1784912290942,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1161,482,7,7,http://localhost:5000/api/patients?search=cn&page=1&limit=20,6,0,0
+1784912291240,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,2,0,0
+1784912291255,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912291287,59,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,7,7,http://localhost:5000/api/auth/login,59,0,0
+1784912291290,58,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,58,0,0
+1784912291365,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,7,7,http://localhost:5000/,2,0,0
+1784912291387,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1591,482,7,7,http://localhost:5000/api/patients?search=sm&page=1&limit=20,6,0,0
+1784912291449,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,11157,458,7,7,http://localhost:5000/api/patients/7,8,0,0
+1784912291743,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,8,8,http://localhost:5000/assets/index.css,2,0,0
+1784912291758,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10668,472,8,8,http://localhost:5000/api/patients?page=5&limit=20,3,0,0
+1784912291847,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,8,8,http://localhost:5000/,3,0,0
+1784912291851,60,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,8,8,http://localhost:5000/api/auth/login,60,0,0
+1784912291894,19,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10602,458,8,8,http://localhost:5000/api/patients/9,19,0,0
+1784912291867,47,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,8,8,http://localhost:5000/assets/index.js,47,0,0
+1784912291958,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,8,8,http://localhost:5000/api/appointments,3,0,0
+1784912292141,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,326,8,8,http://localhost:5000/api/auth/login,62,0,2
+1784912292249,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,8,8,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912292265,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,8,8,http://localhost:5000/api/patients?search=sw&page=1&limit=20,5,0,0
+1784912292352,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,8,8,http://localhost:5000/assets/index.js,2,0,0
+1784912292421,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,8,8,http://localhost:5000/api/appointments,2,0,0
+1784912292421,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,8,8,http://localhost:5000/assets/index.css,4,0,0
+1784912292421,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,8,8,http://localhost:5000/,4,0,0
+1784912292467,59,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,8,8,http://localhost:5000/api/auth/login,59,0,0
+1784912292716,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,8,8,http://localhost:5000/,2,0,0
+1784912292778,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,8743,458,8,8,http://localhost:5000/api/patients/4,3,0,0
+1784912292763,24,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10921,473,8,8,http://localhost:5000/api/patients?page=31&limit=20,24,0,0
+1784912292856,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,8,8,http://localhost:5000/assets/index.css,2,0,0
+1784912292934,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,8,8,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912292934,9,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,8,8,http://localhost:5000/assets/index.js,7,0,0
+1784912293028,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,8,8,http://localhost:5000/,3,0,0
+1784912293230,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,8,8,http://localhost:5000/assets/index.js,2,0,0
+1784912293293,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,8,8,http://localhost:5000/api/appointments,4,0,0
+1784912293293,7,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1161,482,8,8,http://localhost:5000/api/patients?search=ap&page=1&limit=20,7,0,0
+1784912293370,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,8,8,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912293449,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,8,8,http://localhost:5000/assets/index.css,4,0,0
+1784912293449,22,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10532,473,8,8,http://localhost:5000/api/patients?page=47&limit=20,22,0,0
+1784912293543,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,8,8,http://localhost:5000/assets/index.js,3,0,0
+1784912293746,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,8,8,http://localhost:5000/assets/index.css,1,0,0
+1784912293807,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,8,8,http://localhost:5000/api/auth/login,62,0,0
+1784912293807,67,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,11784,459,8,8,http://localhost:5000/api/patients/29,67,0,0
+1784912293885,22,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10608,473,8,8,http://localhost:5000/api/patients?page=41&limit=20,22,0,0
+1784912293964,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,8,8,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912293980,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,8,8,http://localhost:5000/api/patients?search=cp&page=1&limit=20,5,0,0
+1784912294057,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,8,8,http://localhost:5000/assets/index.css,2,0,0
+1784912294259,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,8,8,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912294383,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,8,8,http://localhost:5000/api/appointments,3,0,0
+1784912294383,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,8,8,http://localhost:5000/,3,0,0
+1784912294414,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1161,482,8,8,http://localhost:5000/api/patients?search=aj&page=1&limit=20,6,0,0
+1784912292934,1509,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-2,text,true,,2305,490,8,8,http://localhost:5000/api/ai/pre-appointment/326,1509,0,0
+1784912294475,25,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10675,473,8,8,http://localhost:5000/api/patients?page=25&limit=20,25,0,0
+1784912294491,12,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10594,459,8,8,http://localhost:5000/api/patients/18,12,0,0
+1784912294569,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,8,8,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912294770,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10706,473,9,9,http://localhost:5000/api/patients?page=14&limit=20,21,0,0
+1784912294895,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,62,0,0
+1784912294957,64,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,64,0,0
+1784912295004,20,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1160,482,9,9,http://localhost:5000/api/patients?search=xe&page=1&limit=20,20,0,0
+1784912295005,20,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,20,0,0
+1784912294895,130,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,63,0,0
+1784912294926,101,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,11765,459,9,9,http://localhost:5000/api/patients/49,101,0,0
+1784912295082,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10481,472,9,9,http://localhost:5000/api/patients?page=2&limit=20,21,0,0
+1784912295144,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,326,9,9,http://localhost:5000/api/auth/login,62,0,1
+1784912295298,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=kw&page=1&limit=20,5,0,0
+1784912295469,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,9,9,http://localhost:5000/,2,0,0
+1784912295531,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,2,0,0
+1784912295531,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,65,0,0
+1784912295531,66,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,9,9,http://localhost:5000/,66,0,0
+1784912295531,66,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,66,0,0
+1784912295531,70,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,11259,459,9,9,http://localhost:5000/api/patients/19,70,0,0
+1784912295609,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=eg&page=1&limit=20,6,0,0
+1784912295717,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,9,9,http://localhost:5000/,3,0,0
+1784912295811,4,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,11220,459,9,9,http://localhost:5000/api/patients/45,4,0,0
+1784912295983,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,3,0,0
+1784912296046,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,63,0,0
+1784912296109,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912296109,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,3,0,0
+1784912296109,5,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,9,9,http://localhost:5000/,5,0,0
+1784912296109,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,5,0,0
+1784912296124,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,9424,459,9,9,http://localhost:5000/api/patients/39,7,0,0
+1784912296232,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,3,0,0
+1784912296325,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,3,0,0
+1784912296497,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,3,0,0
+1784912296622,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,62,0,0
+1784912296637,48,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,48,0,0
+1784912296622,64,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,9,9,http://localhost:5000/,64,0,0
+1784912296622,65,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,65,0,0
+1784912296622,67,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10814,473,9,9,http://localhost:5000/api/patients?page=45&limit=20,67,0,0
+1784912296622,68,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,65,0,0
+1784912296746,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,3,0,0
+1784912296839,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,60,0,0
+1784912297010,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912297197,3,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1160,482,9,9,http://localhost:5000/api/patients?search=sw&page=1&limit=20,3,0,0
+1784912297197,5,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,5,0,0
+1784912297197,67,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,66,0,0
+1784912297259,6,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,6,0,0
+1784912297197,69,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,69,0,0
+1784912297197,70,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,9,9,http://localhost:5000/,70,0,0
+1784912297197,70,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,69,0,0
+1784912297401,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,9,9,http://localhost:5000/,2,0,0
+1784912297514,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10531,473,9,9,http://localhost:5000/api/patients?page=47&limit=20,3,0,0
+1784912297701,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,11156,458,10,10,http://localhost:5000/api/patients/7,3,0,0
+1784912297705,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10639,473,10,10,http://localhost:5000/api/patients?page=43&limit=20,3,0,0
+1784912297764,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912297767,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912297769,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912297767,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912297766,24,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10907,473,10,10,http://localhost:5000/api/patients?page=17&limit=20,24,0,0
+1784912297904,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912298018,14,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10721,482,10,10,http://localhost:5000/api/patients?search=ve&page=1&limit=20,14,0,0
+1784912298130,66,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,326,10,10,http://localhost:5000/api/auth/login,65,0,1
+1784912298206,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912298223,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=zz&page=1&limit=20,5,0,0
+1784912298267,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912298284,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912298284,5,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10531,473,10,10,http://localhost:5000/api/patients?page=47&limit=20,5,0,0
+1784912298284,6,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,6,0,0
+1784912298299,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=sn&page=1&limit=20,6,0,0
+1784912298409,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912298534,9,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,11803,459,10,10,http://localhost:5000/api/patients/42,9,0,0
+1784912298705,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912298721,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,63,0,0
+1784912298783,5,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,5,0,0
+1784912298737,54,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,9973,459,10,10,http://localhost:5000/api/patients/37,54,0,0
+1784912298798,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912298798,6,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10927,473,10,10,http://localhost:5000/api/patients?page=11&limit=20,6,0,0
+1784912298798,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ju&page=1&limit=20,8,0,0
+1784912298814,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,9423,459,10,10,http://localhost:5000/api/patients/39,3,0,0
+1784912298923,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912299048,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912299218,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912299295,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912299296,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912299295,5,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,10,10,http://localhost:5000/,5,0,0
+1784912299311,11,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,8793,459,10,10,http://localhost:5000/api/patients/32,11,0,0
+1784912299311,16,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10675,482,10,10,http://localhost:5000/api/patients?search=tr&page=1&limit=20,16,0,0
+1784912299327,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912299311,28,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10788,472,10,10,http://localhost:5000/api/patients?page=8&limit=20,28,0,0
+1784912299435,22,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10514,472,10,10,http://localhost:5000/api/patients?page=4&limit=20,22,0,0
+1784912299559,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912299728,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,3,0,0
+1784912299807,8,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,5,0,0
+1784912299807,24,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10785,473,10,10,http://localhost:5000/api/patients?page=36&limit=20,24,0,0
+1784912299837,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912299837,66,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,66,0,0
+1784912299837,76,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10583,459,10,10,http://localhost:5000/api/patients/36,76,0,0
+1784912299853,65,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10842,482,10,10,http://localhost:5000/api/patients?search=ki&page=1&limit=20,65,0,0
+1784912299961,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ze&page=1&limit=20,5,0,0
+1784912300132,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912300239,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912300330,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912300345,3,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1160,482,10,10,http://localhost:5000/api/patients?search=rx&page=1&limit=20,3,0,0
+1784912300345,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,63,0,0
+1784912300408,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912300425,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912300425,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,9423,459,10,10,http://localhost:5000/api/patients/39,3,0,0
+1784912300470,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,11156,458,10,10,http://localhost:5000/api/patients/7,2,0,0
+1784912300642,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912300750,22,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10796,473,10,10,http://localhost:5000/api/patients?page=15&limit=20,22,0,0
+1784912300843,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912300859,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,12437,459,10,10,http://localhost:5000/api/patients/31,2,0,0
+1784912300920,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912300920,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912300936,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912300936,67,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,67,0,0
+1784912300983,21,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,21,0,0
+1784912301155,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912301280,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=qh&page=1&limit=20,5,0,0
+1784912301358,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10784,473,10,10,http://localhost:5000/api/patients?page=36&limit=20,3,0,0
+1784912301373,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912301436,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912301436,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912301452,60,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,60,0,0
+1784912301515,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912301515,62,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,10,10,http://localhost:5000/,62,0,0
+1784912301669,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912299807,1957,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-2,text,true,,2721,490,10,10,http://localhost:5000/api/ai/pre-appointment/458,1957,0,0
+1784912301794,6,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,11206,459,10,10,http://localhost:5000/api/patients/50,6,0,0
+1784912301870,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=vs&page=1&limit=20,6,0,0
+1784912301885,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912301947,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912301947,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,3,0,0
+1784912302025,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912302088,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,10,10,http://localhost:5000/,3,0,0
+1784912302088,5,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912302180,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10920,473,10,10,http://localhost:5000/api/patients?page=31&limit=20,3,0,0
+1784912302273,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912302303,34,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,34,0,0
+1784912302380,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,12043,458,10,10,http://localhost:5000/api/patients/6,7,0,0
+1784912302460,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10914,473,10,10,http://localhost:5000/api/patients?page=49&limit=20,3,0,0
+1784912302460,5,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,5,0,0
+1784912302460,8,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,10,10,http://localhost:5000/,8,0,0
+1784912302537,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912302599,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,3,0,0
+1784912302599,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912302693,15,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10631,482,10,10,http://localhost:5000/api/patients?search=fi&page=1&limit=20,15,0,0
+1784912302849,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,60,0,0
+1784912302895,16,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,16,0,0
+1784912302849,62,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,10,10,http://localhost:5000/,62,0,0
+1784912302973,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=oy&page=1&limit=20,6,0,0
+1784912302973,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,5,0,0
+1784912302973,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,11091,473,10,10,http://localhost:5000/api/patients?page=16&limit=20,23,0,0
+1784912303050,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912303114,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912303114,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,3,0,0
+1784912303222,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10587,459,10,10,http://localhost:5000/api/patients/47,7,0,0
+1784912303411,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912303426,64,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,64,0,0
+1784912303489,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10593,459,10,10,http://localhost:5000/api/patients/18,3,0,0
+1784912303426,67,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912303489,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,4,0,0
+1784912303504,2,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1160,482,10,10,http://localhost:5000/api/patients?search=sn&page=1&limit=20,2,0,0
+1784912303628,4,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,11090,473,10,10,http://localhost:5000/api/patients?page=16&limit=20,4,0,0
+1784912303566,95,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1220,463,10,10,http://localhost:5000/api/dashboard/stats,95,0,0
+1784912303628,95,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1220,463,10,10,http://localhost:5000/api/dashboard/stats,95,0,0
+1784912303736,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912303923,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912304001,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912304001,4,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,4,0,0
+1784912304001,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,10,10,http://localhost:5000/,4,0,0
+1784912304001,5,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,4,0,0
+1784912304016,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10610,458,10,10,http://localhost:5000/api/patients/5,2,0,0
+1784912304139,18,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10459,482,10,10,http://localhost:5000/api/patients?search=za&page=1&limit=20,17,0,0
+1784912304170,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10904,473,10,10,http://localhost:5000/api/patients?page=48&limit=20,23,0,0
+1784912304233,4,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10656,472,10,10,http://localhost:5000/api/patients?page=6&limit=20,4,0,0
+1784912304248,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912304434,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912304512,4,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,4,0,0
+1784912304512,6,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10787,472,10,10,http://localhost:5000/api/patients?page=8&limit=20,6,0,0
+1784912304512,9,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,8,0,0
+1784912304528,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912304666,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,11220,459,10,10,http://localhost:5000/api/patients/45,3,0,0
+1784912304697,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=os&page=1&limit=20,6,0,0
+1784912304743,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ud&page=1&limit=20,6,0,0
+1784912304822,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912304946,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912305023,8,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,8,0,0
+1784912305023,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=bo&page=1&limit=20,8,0,0
+1784912305038,64,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,64,0,0
+1784912305023,83,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10596,473,10,10,http://localhost:5000/api/patients?page=44&limit=20,83,0,0
+1784912305177,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912305209,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,8810,459,10,10,http://localhost:5000/api/patients/11,8,0,0
+1784912305255,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,8743,458,10,10,http://localhost:5000/api/patients/4,2,0,0
+1784912305333,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912305457,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10903,473,10,10,http://localhost:5000/api/patients?page=48&limit=20,2,0,0
+1784912305534,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912305534,11,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,9417,459,10,10,http://localhost:5000/api/patients/22,11,0,0
+1784912305613,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,10,10,http://localhost:5000/,3,0,0
+1784912305613,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ew&page=1&limit=20,5,0,0
+1784912305691,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912305723,34,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1807,460,10,10,http://localhost:5000/api/appointments,34,0,0
+1784912305769,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912305847,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,1,0,0
+1784912305971,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=cq&page=1&limit=20,5,0,0
+1784912306048,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,4,0,0
+1784912306048,24,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10554,473,10,10,http://localhost:5000/api/patients?page=34&limit=20,24,0,0
+1784912306127,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,11802,459,10,10,http://localhost:5000/api/patients/42,3,0,0
+1784912306127,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912306266,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,10,10,http://localhost:5000/,3,0,0
+1784912306266,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912306282,109,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,109,0,0
+1784912306362,32,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,32,0,0
+1784912306485,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,8760,459,10,10,http://localhost:5000/api/patients/35,7,0,0
+1784912306562,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912306578,51,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=lw&page=1&limit=20,51,0,0
+1784912306639,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912306639,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,4,0,0
+1784912306778,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912306839,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,10,10,http://localhost:5000/,3,0,0
+1784912306902,4,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10819,473,10,10,http://localhost:5000/api/patients?page=46&limit=20,3,0,0
+1784912306902,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,10,10,http://localhost:5000/,4,0,0
+1784912306995,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912307134,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10579,459,10,10,http://localhost:5000/api/patients/38,3,0,0
+1784912307134,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,10,10,http://localhost:5000/,4,0,0
+1784912307150,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912307150,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912307289,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,1,0,0
+1784912307352,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,1,0,0
+1784912304512,2849,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-9,text,true,,2156,490,10,10,http://localhost:5000/api/ai/pre-appointment/282,2849,0,0
+1784912307413,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,4,0,0
+1784912307413,7,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=dn&page=1&limit=20,7,0,0
+1784912307507,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912307647,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912307647,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912307663,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10782,473,10,10,http://localhost:5000/api/patients?page=24&limit=20,2,0,0
+1784912307726,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912307804,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912307865,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,64,0,0
+1784912307865,68,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,68,0,0
+1784912307927,8,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,8,0,0
+1784912307927,9,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10590,459,10,10,http://localhost:5000/api/patients/46,9,0,0
+1784912308082,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912308160,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,63,0,0
+1784912308160,66,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,66,0,0
+1784912308176,52,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ui&page=1&limit=20,52,0,0
+1784912308238,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912308314,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10782,473,10,10,http://localhost:5000/api/patients?page=24&limit=20,3,0,0
+1784912308439,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912308439,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,4,0,0
+1784912308439,5,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,5,0,0
+1784912308439,6,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,10,10,http://localhost:5000/,6,0,0
+1784912308593,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912308734,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10602,458,10,10,http://localhost:5000/api/patients/9,3,0,0
+1784912308734,5,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,5,0,0
+1784912308734,6,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,10,10,http://localhost:5000/,6,0,0
+1784912308751,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912308828,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ue&page=1&limit=20,5,0,0
+1784912308954,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10903,473,10,10,http://localhost:5000/api/patients?page=48&limit=20,2,0,0
+1784912308954,66,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,66,0,0
+1784912308954,68,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,68,0,0
+1784912308954,72,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10809,473,10,10,http://localhost:5000/api/patients?page=42&limit=20,72,0,0
+1784912309110,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,1,0,0
+1784912309248,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912309248,6,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10553,473,10,10,http://localhost:5000/api/patients?page=34&limit=20,6,0,0
+1784912309248,8,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,7,0,0
+1784912309264,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912309341,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,12345,459,10,10,http://localhost:5000/api/patients/40,7,0,0
+1784912309464,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=fw&page=1&limit=20,5,0,0
+1784912309525,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912309525,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912309540,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ln&page=1&limit=20,5,0,0
+1784912309618,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912309757,7,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,7,0,0
+1784912309773,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10906,473,10,10,http://localhost:5000/api/patients?page=17&limit=20,3,0,0
+1784912309757,24,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10723,482,10,10,http://localhost:5000/api/patients?search=so&page=1&limit=20,24,0,0
+1784912309850,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912309976,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,8783,459,10,10,http://localhost:5000/api/patients/48,8,0,0
+1784912310038,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912310038,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912310054,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,11219,459,10,10,http://localhost:5000/api/patients/30,7,0,0
+1784912310132,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10585,472,10,10,http://localhost:5000/api/patients?page=3&limit=20,2,0,0
+1784912310271,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912310286,10,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,12448,459,10,10,http://localhost:5000/api/patients/17,10,0,0
+1784912310286,23,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10726,482,10,10,http://localhost:5000/api/patients?search=qu&page=1&limit=20,23,0,0
+1784912310365,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912310490,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912310552,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,3,0,0
+1784912310568,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912310552,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10737,473,10,10,http://localhost:5000/api/patients?page=20&limit=20,23,0,0
+1784912310646,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ie&page=1&limit=20,5,0,0
+1784912310785,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10736,473,10,10,http://localhost:5000/api/patients?page=20&limit=20,3,0,0
+1784912310801,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912310816,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,11218,459,10,10,http://localhost:5000/api/patients/30,3,0,0
+1784912310928,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912311005,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912311066,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912311082,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912311082,63,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=fq&page=1&limit=20,63,0,0
+1784912311159,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,8759,459,10,10,http://localhost:5000/api/patients/35,3,0,0
+1784912311298,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=vd&page=1&limit=20,5,0,0
+1784912311313,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,63,0,0
+1784912311328,49,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,49,0,0
+1784912311438,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912311580,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10736,473,10,10,http://localhost:5000/api/patients?page=20&limit=20,2,0,0
+1784912311580,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,10,10,http://localhost:5000/,3,0,0
+1784912311643,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,10,10,http://localhost:5000/,1,0,0
+1784912311658,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,8792,459,10,10,http://localhost:5000/api/patients/32,3,0,0
+1784912311674,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912311815,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,11205,459,10,10,http://localhost:5000/api/patients/50,2,0,0
+1784912311877,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912311891,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912311954,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912312093,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,4,0,0
+1784912312093,16,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10817,482,10,10,http://localhost:5000/api/patients?search=ko&page=1&limit=20,16,0,0
+1784912312156,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912312172,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912312188,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912312328,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912312389,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912312467,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912312467,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,10,10,http://localhost:5000/,4,0,0
+1784912312606,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912312621,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10665,459,10,10,http://localhost:5000/api/patients/44,8,0,0
+1784912312668,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912312683,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912312761,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912312840,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912312902,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912312981,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10914,473,10,10,http://localhost:5000/api/patients?page=49&limit=20,3,0,0
+1784912312981,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,4,0,0
+1784912313120,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912313136,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912313182,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912313260,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912313276,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912313415,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912313415,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,10,10,http://localhost:5000/,4,0,0
+1784912313492,5,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,5,0,0
+1784912313492,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=ay&page=1&limit=20,6,0,0
+1784912313648,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,63,0,0
+1784912313632,81,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10754,473,10,10,http://localhost:5000/api/patients?page=26&limit=20,80,0,0
+1784912313694,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10585,472,10,10,http://localhost:5000/api/patients?page=3&limit=20,21,0,0
+1784912313772,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912313787,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912313928,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10808,473,10,10,http://localhost:5000/api/patients?page=42&limit=20,3,0,0
+1784912313928,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,4,0,0
+1784912314007,4,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10626,459,10,10,http://localhost:5000/api/patients/41,4,0,0
+1784912314007,5,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,5,0,0
+1784912314223,5,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1795,444,10,10,http://localhost:5000/,5,0,0
+1784912314223,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=nd&page=1&limit=20,5,0,0
+1784912314223,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=rp&page=1&limit=20,6,0,0
+1784912314285,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912314300,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912314440,1,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1160,482,10,10,http://localhost:5000/api/patients?search=dx&page=1&limit=20,1,0,0
+1784912314439,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,4,0,0
+1784912314517,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912314517,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10690,473,10,10,http://localhost:5000/api/patients?page=50&limit=20,23,0,0
+1784912314734,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,11258,459,10,10,http://localhost:5000/api/patients/19,2,0,0
+1784912314734,5,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,11802,459,10,10,http://localhost:5000/api/patients/42,5,0,0
+1784912314734,7,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-1,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,6,0,0
+1784912314795,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912314811,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10607,473,10,10,http://localhost:5000/api/patients?page=41&limit=20,3,0,0
+1784912314949,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912314949,4,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,8792,459,10,10,http://localhost:5000/api/patients/32,4,0,0
+1784912315043,20,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10717,482,10,10,http://localhost:5000/api/patients?search=ja&page=1&limit=20,20,0,0
+1784912315244,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912315244,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,3,0,0
+1784912315244,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-1,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,4,0,0
+1784912315306,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10927,473,10,10,http://localhost:5000/api/patients?page=11&limit=20,3,0,0
+1784912315321,2,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1160,482,10,10,http://localhost:5000/api/patients?search=rd&page=1&limit=20,2,0,0
+1784912315460,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10782,473,10,10,http://localhost:5000/api/patients?page=24&limit=20,3,0,0
+1784912315460,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,4,0,0
+1784912315569,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10626,459,10,10,http://localhost:5000/api/patients/41,3,0,0
+1784912315754,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-1,text,true,,1219,463,10,10,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912315754,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912315754,122,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,122,0,0
+1784912315833,46,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,8809,459,10,10,http://localhost:5000/api/patients/11,46,0,0
+1784912315817,64,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=gs&page=1&limit=20,64,0,0
+1784912315973,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,63,0,0
+1784912315973,65,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=zy&page=1&limit=20,65,0,0
+1784912316081,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912316266,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-1,text,true,,10920,473,10,10,http://localhost:5000/api/patients?page=31&limit=20,2,0,0
+1784912316327,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912316389,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912316389,5,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,10,10,http://localhost:5000/,5,0,0
+1784912316389,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10652,459,10,10,http://localhost:5000/api/patients/16,8,0,0
+1784912316543,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,10,10,http://localhost:5000/,4,0,0
+1784912316543,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,12406,459,10,10,http://localhost:5000/api/patients/23,8,0,0
+1784912316590,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912315027,1640,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-3,text,true,,2452,490,10,10,http://localhost:5000/api/ai/pre-appointment/118,1640,0,0
+1784912316777,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1161,482,10,10,http://localhost:5000/api/patients?search=rm&page=1&limit=20,5,0,0
+1784912316839,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912316902,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912316902,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912316902,63,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,62,0,0
+1784912317056,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912317056,5,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,3,0,0
+1784912317166,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912317181,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912317290,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-1,text,true,,11205,459,10,10,http://localhost:5000/api/patients/50,2,0,0
+1784912317352,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,1,0,0
+1784912317415,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,62,0,0
+1784912317479,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912317479,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,2,0,0
+1784912317572,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,10,10,http://localhost:5000/api/auth/login,61,0,0
+1784912317572,62,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,10,10,http://localhost:5000/assets/index.css,62,0,0
+1784912317681,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,10,10,http://localhost:5000/assets/index.js,2,0,0
+1784912317757,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,10,10,http://localhost:5000/,2,0,0
+1784912317805,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-1,text,true,,1806,460,10,10,http://localhost:5000/api/appointments,2,0,0
+1784912317868,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912317992,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912317992,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,9,9,http://localhost:5000/,3,0,0
+1784912317992,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,3,0,0
+1784912318145,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912318145,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,9,9,http://localhost:5000/,4,0,0
+1784912318192,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,1,0,0
+1784912318271,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,2,0,0
+1784912318378,22,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10875,473,9,9,http://localhost:5000/api/patients?page=30&limit=20,22,0,0
+1784912318504,5,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10605,473,9,9,http://localhost:5000/api/patients?page=13&limit=20,5,0,0
+1784912318504,6,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,6,0,0
+1784912318504,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,6,0,0
+1784912318659,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,3,0,0
+1784912318659,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10636,473,9,9,http://localhost:5000/api/patients?page=40&limit=20,21,0,0
+1784912318706,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912318785,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,1,0,0
+1784912318909,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=qm&page=1&limit=20,6,0,0
+1784912319019,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912319019,5,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,5,0,0
+1784912319019,7,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=ej&page=1&limit=20,7,0,0
+1784912319174,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,2,0,0
+1784912319189,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=nl&page=1&limit=20,5,0,0
+1784912319220,20,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10693,473,9,9,http://localhost:5000/api/patients?page=27&limit=20,20,0,0
+1784912319299,1,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,1,0,0
+1784912319423,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,11764,459,9,9,http://localhost:5000/api/patients/49,2,0,0
+1784912319532,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10787,472,9,9,http://localhost:5000/api/patients?page=8&limit=20,2,0,0
+1784912319532,4,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,4,0,0
+1784912319532,5,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,8743,458,9,9,http://localhost:5000/api/patients/4,5,0,0
+1784912319686,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912319702,6,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,12034,458,9,9,http://localhost:5000/api/patients/3,6,0,0
+1784912319748,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=vt&page=1&limit=20,5,0,0
+1784912319810,26,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10776,473,9,9,http://localhost:5000/api/patients?page=23&limit=20,26,0,0
+1784912319935,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,2,0,0
+1784912320042,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,4,0,0
+1784912320042,5,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10920,473,9,9,http://localhost:5000/api/patients?page=31&limit=20,5,0,0
+1784912320042,7,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=oj&page=1&limit=20,7,0,0
+1784912320211,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,2,0,0
+1784912320196,22,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10626,473,9,9,http://localhost:5000/api/patients?page=37&limit=20,22,0,0
+1784912320258,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10586,459,9,9,http://localhost:5000/api/patients/47,2,0,0
+1784912320351,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=xa&page=1&limit=20,6,0,0
+1784912320445,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,63,0,0
+1784912320553,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,12042,458,9,9,http://localhost:5000/api/patients/6,3,0,0
+1784912320553,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=ux&page=1&limit=20,8,0,0
+1784912320723,64,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,64,0,0
+1784912320723,64,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=tf&page=1&limit=20,64,0,0
+1784912320769,20,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,20,0,0
+1784912320863,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,11783,459,9,9,http://localhost:5000/api/patients/29,2,0,0
+1784912321021,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,9,9,http://localhost:5000/,2,0,0
+1784912321067,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,3,0,0
+1784912321067,5,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10589,459,9,9,http://localhost:5000/api/patients/46,5,0,0
+1784912321302,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10593,459,9,9,http://localhost:5000/api/patients/18,2,0,0
+1784912321302,4,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,9,9,http://localhost:5000/,4,0,0
+1784912321302,66,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,66,0,0
+1784912321379,1,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,1,0,0
+1784912321535,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,2,0,0
+1784912321581,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,2,0,0
+1784912321581,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,63,0,0
+1784912321813,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,2,0,0
+1784912321813,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,4,0,0
+1784912320553,1282,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-4,text,true,,2229,489,9,9,http://localhost:5000/api/ai/pre-appointment/18,1282,0,0
+1784912321875,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1795,444,9,9,http://localhost:5000/,2,0,0
+1784912321890,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,62,0,0
+1784912322046,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,2,0,0
+1784912322093,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,61,0,0
+1784912322155,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,9,9,http://localhost:5000/,1,0,0
+1784912322324,61,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,61,0,0
+1784912322324,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,63,0,0
+1784912322340,107,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,107,0,0
+1784912322386,63,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-2,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,62,0,0
+1784912322463,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1795,444,9,9,http://localhost:5000/,1,0,0
+1784912322555,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912322664,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,9,9,http://localhost:5000/,1,0,0
+1784912322664,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,2,0,0
+1784912322896,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912322896,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,9,9,http://localhost:5000/,3,0,0
+1784912322958,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,9,9,http://localhost:5000/,2,0,0
+1784912322958,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-2,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,3,0,0
+1784912322973,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-3,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,2,0,0
+1784912323067,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10927,473,9,9,http://localhost:5000/api/patients?page=11&limit=20,2,0,0
+1784912323175,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,2,0,0
+1784912323175,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,1,0,0
+1784912323406,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10682,473,9,9,http://localhost:5000/api/patients?page=38&limit=20,2,0,0
+1784912323406,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,3,0,0
+1784912323468,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-2,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912323468,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,9,9,http://localhost:5000/assets/index.js,3,0,0
+1784912323484,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-3,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,3,0,0
+1784912323576,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=ke&page=1&limit=20,6,0,0
+1784912323684,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912323684,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,4,0,0
+1784912323917,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,4,0,0
+1784912323917,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=ep&page=1&limit=20,6,0,0
+1784912323979,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-2,text,true,,10834,473,9,9,http://localhost:5000/api/patients?page=28&limit=20,3,0,0
+1784912323979,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,9,9,http://localhost:5000/assets/index.css,3,0,0
+1784912323994,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-3,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912324088,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,11225,459,9,9,http://localhost:5000/api/patients/33,7,0,0
+1784912324196,1,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,1,0,0
+1784912324196,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10806,473,9,9,http://localhost:5000/api/patients?page=12&limit=20,23,0,0
+1784912324429,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912324429,5,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10589,459,9,9,http://localhost:5000/api/patients/46,5,0,0
+1784912324492,4,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,9,9,http://localhost:5000/api/dashboard/stats,4,0,0
+1784912324492,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=uh&page=1&limit=20,6,0,0
+1784912324508,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10834,473,9,9,http://localhost:5000/api/patients?page=28&limit=20,2,0,0
+1784912324601,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,2,0,0
+1784912324709,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10819,473,9,9,http://localhost:5000/api/patients?page=46&limit=20,2,0,0
+1784912324724,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=rf&page=1&limit=20,6,0,0
+1784912324942,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10885,472,9,9,http://localhost:5000/api/patients?page=7&limit=20,3,0,0
+1784912324942,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,4,0,0
+1784912325004,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10795,473,9,9,http://localhost:5000/api/patients?page=15&limit=20,3,0,0
+1784912325004,6,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-2,text,true,,12447,459,9,9,http://localhost:5000/api/patients/17,6,0,0
+1784912325020,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=gm&page=1&limit=20,6,0,0
+1784912325112,64,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,64,0,0
+1784912325236,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,11218,459,9,9,http://localhost:5000/api/patients/30,2,0,0
+1784912325220,24,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10698,482,9,9,http://localhost:5000/api/patients?search=la&page=1&limit=20,24,0,0
+1784912325453,64,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1486,543,9,9,http://localhost:5000/api/auth/login,64,0,0
+1784912325453,65,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,9,9,http://localhost:5000/api/patients?search=al&page=1&limit=20,65,0,0
+1784912325516,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-2,text,true,,1806,460,9,9,http://localhost:5000/api/appointments,3,0,0
+1784912325516,9,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1161,482,8,8,http://localhost:5000/api/patients?search=ae&page=1&limit=20,9,0,0
+1784912325531,4,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-3,text,true,,10593,459,8,8,http://localhost:5000/api/patients/18,4,0,0
+1784912325688,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,8,8,http://localhost:5000/,2,0,0
+1784912325749,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,8,8,http://localhost:5000/api/appointments,4,0,0
+1784912325749,8,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,12331,459,8,8,http://localhost:5000/api/patients/26,8,0,0
+1784912326030,4,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10626,459,8,8,http://localhost:5000/api/patients/41,4,0,0
+1784912326030,7,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1795,444,8,8,http://localhost:5000/,7,0,0
+1784912326030,10,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,12379,459,8,8,http://localhost:5000/api/patients/34,10,0,0
+1784912326045,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-3,text,true,,1806,460,8,8,http://localhost:5000/api/appointments,2,0,0
+1784912326201,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,2,0,0
+1784912326264,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,2,0,0
+1784912326539,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,3,0,0
+1784912326540,4,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,4,0,0
+1784912326540,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-5,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,4,0,0
+1784912326712,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,3,0,0
+1784912326775,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,7,7,http://localhost:5000/api/auth/login,63,0,0
+1784912327053,70,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,7,7,http://localhost:5000/api/auth/login,70,0,0
+1784912327053,142,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1486,543,7,7,http://localhost:5000/api/auth/login,142,0,0
+1784912327053,142,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-5,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,142,0,0
+1784912327223,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912327348,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,7,7,http://localhost:5000/,2,0,0
+1784912327627,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,7,7,http://localhost:5000/,2,0,0
+1784912327705,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-5,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912327705,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1795,444,7,7,http://localhost:5000/,3,0,0
+1784912327737,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10513,472,7,7,http://localhost:5000/api/patients?page=4&limit=20,2,0,0
+1784912326263,1572,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-10,text,true,,2221,490,7,7,http://localhost:5000/api/ai/pre-appointment/316,1572,0,0
+1784912327862,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,2,0,0
+1784912328143,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,2,0,0
+1784912328221,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-4,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,4,0,0
+1784912328221,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-5,text,true,,10804,473,7,7,http://localhost:5000/api/patients?page=35&limit=20,21,0,0
+1784912328252,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,7,7,http://localhost:5000/api/patients?search=xp&page=1&limit=20,5,0,0
+1784912328344,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,7,7,http://localhost:5000/api/auth/login,63,0,0
+1784912328376,32,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,32,0,0
+1784912328655,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,2,0,0
+1784912328732,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-4,text,true,,29024,460,7,7,http://localhost:5000/assets/index.css,2,0,0
+1784912328748,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1161,482,7,7,http://localhost:5000/api/patients?search=qv&page=1&limit=20,5,0,0
+1784912328763,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,9423,459,7,7,http://localhost:5000/api/patients/39,2,0,0
+1784912328917,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912328917,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,7,7,http://localhost:5000/,3,0,0
+1784912329165,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912329243,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-4,text,true,,1219,463,7,7,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912329258,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-5,text,true,,8759,459,7,7,http://localhost:5000/api/patients/35,3,0,0
+1784912329274,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,2,0,0
+1784912329430,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10625,473,7,7,http://localhost:5000/api/patients?page=37&limit=20,3,0,0
+1784912329430,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,7,7,http://localhost:5000/assets/index.js,3,0,0
+1784912329678,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10643,473,7,7,http://localhost:5000/api/patients?page=22&limit=20,21,0,0
+1784912329754,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10480,472,7,7,http://localhost:5000/api/patients?page=2&limit=20,3,0,0
+1784912329770,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-5,text,true,,1806,460,7,7,http://localhost:5000/api/appointments,2,0,0
+1784912329785,66,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,6,6,http://localhost:5000/api/auth/login,66,0,0
+1784912329942,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,6,6,http://localhost:5000/assets/index.css,4,0,0
+1784912329942,16,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10833,482,6,6,http://localhost:5000/api/patients?search=br&page=1&limit=20,16,0,0
+1784912330208,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,6,6,http://localhost:5000/api/patients?search=ff&page=1&limit=20,5,0,0
+1784912330269,3,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-4,text,true,,10674,482,6,6,http://localhost:5000/api/patients?search=tr&page=1&limit=20,3,0,0
+1784912330362,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,6,6,http://localhost:5000/,1,0,0
+1784912330454,1,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,6,6,http://localhost:5000/api/dashboard/stats,1,0,0
+1784912330469,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10626,459,6,6,http://localhost:5000/api/patients/41,3,0,0
+1784912330717,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,9972,459,6,6,http://localhost:5000/api/patients/37,3,0,0
+1784912330779,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-4,text,true,,11802,459,6,6,http://localhost:5000/api/patients/42,2,0,0
+1784912330873,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,6,6,http://localhost:5000/assets/index.js,2,0,0
+1784912330966,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10736,473,6,6,http://localhost:5000/api/patients?page=20&limit=20,2,0,0
+1784912330981,1,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,6,6,http://localhost:5000/api/appointments,1,0,0
+1784912331230,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1806,460,6,6,http://localhost:5000/api/appointments,2,0,0
+1784912331292,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-4,text,true,,1806,460,6,6,http://localhost:5000/api/appointments,2,0,0
+1784912331385,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,5,5,http://localhost:5000/assets/index.css,1,0,0
+1784912331477,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,5,5,http://localhost:5000/api/patients?search=iv&page=1&limit=20,5,0,0
+1784912331493,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,5,5,http://localhost:5000/api/auth/login,65,0,0
+1784912331742,60,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1486,543,5,5,http://localhost:5000/api/auth/login,60,0,0
+1784912331897,1,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,5,5,http://localhost:5000/api/dashboard/stats,1,0,0
+1784912331989,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,12344,459,5,5,http://localhost:5000/api/patients/40,3,0,0
+1784912332067,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,5,5,http://localhost:5000/,1,0,0
+1784912332316,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1795,444,5,5,http://localhost:5000/,2,0,0
+1784912332409,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10787,472,5,5,http://localhost:5000/api/patients?page=8&limit=20,2,0,0
+1784912332502,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,5,5,http://localhost:5000/api/appointments,2,0,0
+1784912332581,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,5,5,http://localhost:5000/assets/index.js,2,0,0
+1784912332831,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-7,text,true,,233662,459,5,5,http://localhost:5000/assets/index.js,1,0,0
+1784912332924,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,5,5,http://localhost:5000/api/patients?search=hi&page=1&limit=20,5,0,0
+1784912333095,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,5,5,http://localhost:5000/assets/index.css,1,0,0
+1784912333343,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-7,text,true,,29024,460,5,5,http://localhost:5000/assets/index.css,1,0,0
+1784912333437,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10602,458,5,5,http://localhost:5000/api/patients/9,3,0,0
+1784912333607,1,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,5,5,http://localhost:5000/api/dashboard/stats,1,0,0
+1784912333855,75,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-7,text,true,,1220,463,5,5,http://localhost:5000/api/dashboard/stats,75,0,0
+1784912333947,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,5,5,http://localhost:5000/api/appointments,2,0,0
+1784912334118,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10795,473,5,5,http://localhost:5000/api/patients?page=15&limit=20,2,0,0
+1784912334458,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1486,543,5,5,http://localhost:5000/api/auth/login,61,0,0
+1784912334442,81,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-7,text,true,,10687,473,5,5,http://localhost:5000/api/patients?page=19&limit=20,81,0,0
+1784912333018,1509,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-10,text,true,,2466,490,5,5,http://localhost:5000/api/ai/pre-appointment/356,1509,0,0
+1784912334627,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,5,5,http://localhost:5000/api/patients?search=ht&page=1&limit=20,6,0,0
+1784912335032,64,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,5,5,http://localhost:5000/api/auth/login,64,0,0
+1784912335032,66,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1795,444,5,5,http://localhost:5000/,66,0,0
+1784912335032,67,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1161,482,5,5,http://localhost:5000/api/patients?search=hn&page=1&limit=20,67,0,0
+1784912335141,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,11205,459,5,5,http://localhost:5000/api/patients/50,2,0,0
+1784912335606,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-7,text,true,,8792,459,5,5,http://localhost:5000/api/patients/32,2,0,0
+1784912335606,3,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,5,5,http://localhost:5000/,3,0,0
+1784912335606,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-8,text,true,,233662,459,5,5,http://localhost:5000/assets/index.js,3,0,0
+1784912335652,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,5,5,http://localhost:5000/api/appointments,2,0,0
+1784912336122,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-8,text,true,,29024,460,5,5,http://localhost:5000/assets/index.css,4,0,0
+1784912336122,6,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,5,5,http://localhost:5000/assets/index.js,4,0,0
+1784912336122,7,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-7,text,true,,1807,460,5,5,http://localhost:5000/api/appointments,7,0,0
+1784912336168,61,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,4,4,http://localhost:5000/api/auth/login,61,0,0
+1784912336635,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-8,text,true,,1219,463,4,4,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912336635,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,4,4,http://localhost:5000/assets/index.css,3,0,0
+1784912336745,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,4,4,http://localhost:5000/,2,0,0
+1784912337150,1,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,4,4,http://localhost:5000/api/dashboard/stats,1,0,0
+1784912337150,23,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-8,text,true,,10772,473,4,4,http://localhost:5000/api/patients?page=32&limit=20,23,0,0
+1784912337260,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,4,4,http://localhost:5000/assets/index.js,1,0,0
+1784912337662,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10692,473,4,4,http://localhost:5000/api/patients?page=27&limit=20,2,0,0
+1784912337677,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1161,482,4,4,http://localhost:5000/api/patients?search=lj&page=1&limit=20,6,0,0
+1784912337770,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,4,4,http://localhost:5000/assets/index.css,2,0,0
+1784912338175,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,4,4,http://localhost:5000/api/patients?search=dl&page=1&limit=20,5,0,0
+1784912338190,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-8,text,true,,11866,459,4,4,http://localhost:5000/api/patients/27,7,0,0
+1784912338284,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,4,4,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912338688,3,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,12378,459,4,4,http://localhost:5000/api/patients/34,3,0,0
+1784912338704,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-8,text,true,,1806,460,4,4,http://localhost:5000/api/appointments,2,0,0
+1784912338796,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10808,473,3,3,http://localhost:5000/api/patients?page=42&limit=20,3,0,0
+1784912339201,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,3,3,http://localhost:5000/api/appointments,3,0,0
+1784912339310,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,3,3,http://localhost:5000/api/patients?search=nz&page=1&limit=20,6,0,0
+1784912339711,63,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,3,3,http://localhost:5000/api/auth/login,63,0,0
+1784912339821,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,10610,458,3,3,http://localhost:5000/api/patients/5,2,0,0
+1784912340285,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,3,3,http://localhost:5000/,2,0,0
+1784912340332,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,3,3,http://localhost:5000/api/appointments,2,0,0
+1784912340798,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,3,3,http://localhost:5000/assets/index.js,2,0,0
+1784912340845,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1486,543,3,3,http://localhost:5000/api/auth/login,62,0,0
+1784912341312,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,3,3,http://localhost:5000/assets/index.css,2,0,0
+1784912341422,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1795,444,3,3,http://localhost:5000/,1,0,0
+1784912341826,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,3,3,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912341933,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-9,text,true,,233662,459,3,3,http://localhost:5000/assets/index.js,2,0,0
+1784912342339,3,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10803,473,3,3,http://localhost:5000/api/patients?page=35&limit=20,3,0,0
+1784912342448,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-9,text,true,,29024,460,3,3,http://localhost:5000/assets/index.css,2,0,0
+1784912342851,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,3,3,http://localhost:5000/api/patients?search=vu&page=1&limit=20,5,0,0
+1784912342959,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-9,text,true,,1219,463,3,3,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912343363,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10610,458,3,3,http://localhost:5000/api/patients/5,2,0,0
+1784912343472,2,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-9,text,true,,11090,473,3,3,http://localhost:5000/api/patients?page=16&limit=20,2,0,0
+1784912343876,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,3,3,http://localhost:5000/api/appointments,2,0,0
+1784912343986,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1161,482,3,3,http://localhost:5000/api/patients?search=dz&page=1&limit=20,5,0,0
+1784912344391,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1486,543,3,3,http://localhost:5000/api/auth/login,62,0,0
+1784912344500,6,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-9,text,true,,11781,459,3,3,http://localhost:5000/api/patients/24,6,0,0
+1784912344968,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1795,444,3,3,http://localhost:5000/,1,0,0
+1784912345015,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-9,text,true,,1806,460,3,3,http://localhost:5000/api/appointments,2,0,0
+1784912345482,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-10,text,true,,233662,459,2,2,http://localhost:5000/assets/index.js,1,0,0
+1784912345999,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-10,text,true,,29024,460,2,2,http://localhost:5000/assets/index.css,2,0,0
+1784912346511,1,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-10,text,true,,1219,463,2,2,http://localhost:5000/api/dashboard/stats,1,0,0
+1784912347020,4,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-10,text,true,,10903,473,2,2,http://localhost:5000/api/patients?page=48&limit=20,4,0,0
+1784912347532,6,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1161,482,2,2,http://localhost:5000/api/patients?search=ot&page=1&limit=20,6,0,0
+1784912348048,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-10,text,true,,12447,459,2,2,http://localhost:5000/api/patients/17,2,0,0
+1784912348561,1,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-10,text,true,,1806,460,2,2,http://localhost:5000/api/appointments,1,0,0
+1784912309757,55195,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-6,text,true,,2331,490,1,1,http://localhost:5000/api/ai/pre-appointment/331,55195,0,0
+1784912365461,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,1,1,http://localhost:5000/api/auth/login,65,0,2
+1784912366037,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,1,1,http://localhost:5000/,1,0,0
+1784912366553,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,1,1,http://localhost:5000/assets/index.js,2,0,0
+1784912367065,1,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,1,1,http://localhost:5000/assets/index.css,1,0,0
+1784912367575,98,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1220,463,1,1,http://localhost:5000/api/dashboard/stats,98,0,0
+1784912368178,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10536,473,1,1,http://localhost:5000/api/patients?page=18&limit=20,21,0,0
+1784912368704,4,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,1,1,http://localhost:5000/api/patients?search=nw&page=1&limit=20,4,0,0
+1784912369218,2,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,11865,459,1,1,http://localhost:5000/api/patients/27,2,0,0
+1784912369730,5,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1807,460,1,1,http://localhost:5000/api/appointments,5,0,0
+1784912370242,1609,10 POST /api/ai/pre-appointment/{id},200,OK,Light Load - 10 users over 30s 1-6,text,true,,2559,490,1,1,http://localhost:5000/api/ai/pre-appointment/474,1609,0,0
+1784912372354,65,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,1,1,http://localhost:5000/api/auth/login,65,0,0
+1784912372929,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,1,1,http://localhost:5000/,2,0,0
+1784912373439,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,1,1,http://localhost:5000/assets/index.js,2,0,0
+1784912373952,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,1,1,http://localhost:5000/assets/index.css,2,0,0
+1784912374464,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,1,1,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912374979,26,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10907,473,1,1,http://localhost:5000/api/patients?page=17&limit=20,26,0,0
+1784912375518,8,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,1,1,http://localhost:5000/api/patients?search=vm&page=1&limit=20,8,0,0
+1784912376032,10,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,11784,459,1,1,http://localhost:5000/api/patients/29,10,0,0
+1784912376546,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,1,1,http://localhost:5000/api/appointments,3,0,0
+1784912377061,81,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,1,1,http://localhost:5000/api/auth/login,81,0,0
+1784912377649,2,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,1,1,http://localhost:5000/,2,0,0
+1784912378160,4,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,1,1,http://localhost:5000/assets/index.js,3,0,0
+1784912378673,3,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,1,1,http://localhost:5000/assets/index.css,3,0,0
+1784912379187,3,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,1,1,http://localhost:5000/api/dashboard/stats,3,0,0
+1784912379700,29,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10814,473,1,1,http://localhost:5000/api/patients?page=45&limit=20,29,0,0
+1784912380242,10,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,1,1,http://localhost:5000/api/patients?search=hv&page=1&limit=20,10,0,0
+1784912380753,11,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,8793,459,1,1,http://localhost:5000/api/patients/32,11,0,0
+1784912381279,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,1,1,http://localhost:5000/api/appointments,2,0,0
+1784912381788,102,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,1,1,http://localhost:5000/api/auth/login,102,0,0
+1784912382393,5,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,1,1,http://localhost:5000/,4,0,0
+1784912382905,3,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,1,1,http://localhost:5000/assets/index.js,2,0,0
+1784912383418,4,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,1,1,http://localhost:5000/assets/index.css,4,0,0
+1784912383932,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,1,1,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912384444,8,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10906,473,1,1,http://localhost:5000/api/patients?page=17&limit=20,8,0,0
+1784912384956,10,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,1,1,http://localhost:5000/api/patients?search=gt&page=1&limit=20,10,0,0
+1784912385482,6,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,12480,459,1,1,http://localhost:5000/api/patients/10,6,0,0
+1784912385995,2,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,1,1,http://localhost:5000/api/appointments,2,0,0
+1784912386504,62,01 POST /api/auth/login,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1486,543,1,1,http://localhost:5000/api/auth/login,62,0,0
+1784912387079,1,02 GET / (index.html),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1795,444,1,1,http://localhost:5000/,1,0,0
+1784912387593,2,03 GET /assets/index.js (main bundle),200,OK,Light Load - 10 users over 30s 1-6,text,true,,233662,459,1,1,http://localhost:5000/assets/index.js,2,0,0
+1784912388105,2,04 GET /assets/index.css,200,OK,Light Load - 10 users over 30s 1-6,text,true,,29024,460,1,1,http://localhost:5000/assets/index.css,2,0,0
+1784912388618,2,05 GET /api/dashboard/stats,200,OK,Light Load - 10 users over 30s 1-6,text,true,,1219,463,1,1,http://localhost:5000/api/dashboard/stats,2,0,0
+1784912389132,21,06 GET /api/patients (paginated list),200,OK,Light Load - 10 users over 30s 1-6,text,true,,10721,473,1,1,http://localhost:5000/api/patients?page=29&limit=20,21,0,0
+1784912389662,5,07 GET /api/patients?search= (name search),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1161,482,1,1,http://localhost:5000/api/patients?search=fd&page=1&limit=20,5,0,0
+1784912390175,7,08 GET /api/patients/{id} (record with history),200,OK,Light Load - 10 users over 30s 1-6,text,true,,12406,459,1,1,http://localhost:5000/api/patients/23,7,0,0
+1784912390686,3,09 GET /api/appointments (day view),200,OK,Light Load - 10 users over 30s 1-6,text,true,,1806,460,1,1,http://localhost:5000/api/appointments,3,0,0
