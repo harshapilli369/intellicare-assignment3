@@ -1,60 +1,61 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTable } from 'react-table';
 
 import TopBar from '../../components/layout/TopBar';
-import api from '../../services/api';
+import PatientTable from '../../components/patients/PatientTable';
+import useDebounce from '../../hooks/useDebounce';
+import { cachedGet } from '../../services/apiCache';
 
 const PAGE_SIZE = 20;
-
-const columns = [
-  { Header: 'Name', accessor: 'name' },
-  { Header: 'Sex', accessor: 'sex' },
-  { Header: 'Phone', accessor: 'phone' },
-  {
-    Header: 'Conditions',
-    accessor: 'conditions',
-    Cell: ({ value }) => (value?.length ? value.join(', ') : '-'),
-  },
-];
 
 const Patients = () => {
   const navigate = useNavigate();
 
-  const [search, setSearch] = useState('');
+  const [searchInput, setSearchInput] = useState('');
   const [patients, setPatients] = useState([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
+  // The field updates on every keystroke so typing stays responsive, but the
+  // request waits until typing pauses.
+  const search = useDebounce(searchInput, 300);
+
   useEffect(() => {
+    let cancelled = false;
     setLoading(true);
-    api
-      .get('/patients', { params: { search, page, limit: PAGE_SIZE } })
-      .then(({ data }) => {
+
+    cachedGet('/patients', { search, page, limit: PAGE_SIZE })
+      .then((data) => {
+        if (cancelled) return;
         setPatients(data.patients);
         setTotal(data.total);
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+
+    // A slow earlier response must not overwrite a newer one.
+    return () => {
+      cancelled = true;
+    };
   }, [search, page]);
 
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({
-    columns,
-    data: patients,
-  });
+  const handleSearch = useCallback((value) => {
+    setPage(1);
+    setSearchInput(value);
+  }, []);
+
+  const handleView = useCallback(
+    (patientId) => navigate(`/patients/${patientId}`),
+    [navigate]
+  );
 
   const lastPage = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
   return (
     <>
-      <TopBar
-        placeholder="Search Patient Name"
-        value={search}
-        onChange={(value) => {
-          setPage(1);
-          setSearch(value);
-        }}
-      />
+      <TopBar placeholder="Search Patient Name" value={searchInput} onChange={handleSearch} />
 
       <div className="px-8 pt-8">
         <h1 className="text-2xl font-bold">Patients</h1>
@@ -63,45 +64,9 @@ const Patients = () => {
         </p>
 
         <div className="card-plain mt-6 overflow-x-auto">
-          <table {...getTableProps()} className="w-full text-left text-sm">
-            <thead>
-              {headerGroups.map((headerGroup) => (
-                <tr {...headerGroup.getHeaderGroupProps()} className="border-b border-slate-200">
-                  {headerGroup.headers.map((column) => (
-                    <th {...column.getHeaderProps()} className="pb-3 font-semibold text-slate-700">
-                      {column.render('Header')}
-                    </th>
-                  ))}
-                  <th className="pb-3" />
-                </tr>
-              ))}
-            </thead>
-            <tbody {...getTableBodyProps()}>
-              {rows.map((row) => {
-                prepareRow(row);
-                return (
-                  <tr {...row.getRowProps()} className="border-b border-slate-100 last:border-0">
-                    {row.cells.map((cell) => (
-                      <td {...cell.getCellProps()} className="py-3 pr-4">
-                        {cell.render('Cell')}
-                      </td>
-                    ))}
-                    <td className="py-3 text-right">
-                      <button
-                        type="button"
-                        className="btn-primary"
-                        onClick={() => navigate(`/patients/${row.original.patientId}`)}
-                      >
-                        view info
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <PatientTable patients={patients} onView={handleView} />
 
-          {rows.length === 0 && !loading && (
+          {patients.length === 0 && !loading && (
             <p className="py-6 text-center text-sm text-slate-500">No patients matched.</p>
           )}
         </div>
