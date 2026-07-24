@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -29,6 +30,15 @@ app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/ai', aiRoutes);
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
+
+// Serve the built frontend so the whole application is reachable on one origin.
+const clientDist = path.join(__dirname, '../../frontend/dist');
+app.use(express.static(clientDist));
+
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api')) return next();
+  res.sendFile(path.join(clientDist, 'index.html'));
+});
 
 app.use(errorHandler);
 
