@@ -21,7 +21,15 @@ app.use(morgan('dev'));
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 200 }));
+// The load test drives far more traffic than a real user would, so the global
+// limit is lifted for that environment only. Without this the run measures the
+// rate limiter rejecting requests rather than how the application performs.
+app.use(
+  rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: process.env.NODE_ENV === 'loadtest' ? 100000 : 200,
+  })
+);
 
 app.use('/api/auth', authRoutes);
 app.use('/api/patients', patientRoutes);
