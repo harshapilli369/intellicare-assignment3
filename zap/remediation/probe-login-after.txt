@@ -1,0 +1,44 @@
+IntelliCare - sign-in endpoint probe (AFTER remediation)
+Captured: 2026-07-24 18:18 UTC
+Command: node backend/scripts/probe-login.js
+
+Sign-in probe against http://localhost:5000
+
+Valid credentials
+  sent:     {"email":"dr.kuteishi@intellicare.ca","password":"Password123!"}
+  expected: signs in
+  result:   AUTHENTICATED
+
+Wrong password
+  sent:     {"email":"dr.kuteishi@intellicare.ca","password":"wrong"}
+  expected: rejected
+  result:   rejected as bad credentials
+
+Unknown address
+  sent:     {"email":"nobody@example.com","password":"whatever"}
+  expected: rejected
+  result:   rejected as bad credentials
+
+Operator in email
+  sent:     {"email":{"$ne":null},"password":"whatever"}
+  expected: must be rejected without reaching the database
+  result:   rejected by validation
+
+Operator in email and password
+  sent:     {"email":{"$ne":null},"password":{"$ne":null}}
+  expected: must be rejected without reaching the database
+  result:   rejected by validation
+
+Expression in email
+  sent:     {"email":{"$regex":"^dr"},"password":"whatever"}
+  expected: must be rejected without reaching the database
+  result:   rejected by validation
+
+Expression matching any address
+  sent:     {"email":{"$regex":".*"},"password":{"$gt":""}}
+  expected: must be rejected without reaching the database
+  result:   rejected by validation
+
+A result of REACHED THE DATABASE means the operator was passed
+into the query. The password comparison happens to fail on a
+non-string, but the account was already selected by then.
