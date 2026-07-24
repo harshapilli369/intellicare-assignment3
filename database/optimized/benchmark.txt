@@ -1,0 +1,36 @@
+IntelliCare - endpoint benchmark (OPTIMIZED)
+Captured: 2026-07-24 16:56 UTC
+Command: node backend/scripts/benchmark.js 5
+
+Three stages, so each optimization can be attributed separately.
+The script makes one untimed call first, so cached figures are steady-state hits.
+
+--- 1. BASELINE: no indexes, one query per row, no cache ---
+
+endpoint          status      min      avg      max
+----------------------------------------------------
+dashboard stats   200     508 ms  541 ms  555 ms
+patient list      200     181 ms  206 ms  227 ms
+patient search    200     441 ms  473 ms  499 ms
+patient record    200    4909 ms 5081 ms 5184 ms
+appointments      200     309 ms  407 ms  507 ms
+
+--- 2. AFTER INDEXING AND SINGLE-QUERY JOINS (no cache yet) ---
+
+endpoint          status      min      avg      max
+----------------------------------------------------
+dashboard stats   200     142 ms  167 ms  176 ms
+patient list      200      56 ms   65 ms   75 ms
+patient search    200      39 ms   49 ms   61 ms
+patient record    200       8 ms    8 ms    9 ms
+appointments      200       5 ms    6 ms    6 ms
+
+--- 3. AFTER ADDING THE RESPONSE CACHE ---
+
+endpoint          status      min      avg      max
+----------------------------------------------------
+dashboard stats   200       2 ms    4 ms   12 ms
+patient list      200       3 ms    3 ms    4 ms
+patient search    200       3 ms    3 ms    4 ms
+patient record    200       2 ms    2 ms    3 ms
+appointments      200       1 ms    2 ms    2 ms

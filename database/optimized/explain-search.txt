@@ -1,0 +1,25 @@
+IntelliCare - patient directory query plan (OPTIMIZED, after indexing)
+Captured: 2026-07-24 16:56 UTC
+Command: node backend/scripts/explain-search.js an
+
+Collection: patients
+  documents:   100000
+  avg doc size: 383 bytes
+  data size:   36.6 MB
+  indexes:     _id_, nameTokens_1, clinicianId_1_name_1, patientId_1
+
+Unindexed - case-insensitive match anywhere in the name
+  query:               {"name":{"$regex":"an","$options":"i"}}
+  winning stage:       SORT
+  documents examined:  100000
+  index keys examined: 0
+  documents returned:  20
+  execution time:      344 ms
+
+Indexed - anchored match against lowercased name tokens
+  query:               {"nameTokens":{"$regex":"^an"}}
+  winning stage:       SORT
+  documents examined:  3815
+  index keys examined: 3816
+  documents returned:  20
+  execution time:      22 ms
