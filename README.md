@@ -72,15 +72,15 @@ intellicare-assignment3/
 │       └── styles/
 ├── backend/                   # Node.js + Express API
 │   ├── .env.example
+│   ├── scripts/               # seed.js, explain-search.js
 │   └── src/
 │       ├── app.js             # Express entry point
 │       ├── config/            # mongodb.js, gemini.js
-│       ├── controllers/       # authController, patientController, aiController
+│       ├── controllers/       # auth, patient, appointment, dashboard, ai
 │       ├── middleware/        # authenticate, authorize, errorHandler
 │       ├── models/mongodb/    # User, Patient, Appointment, Note, AISummary
-│       ├── routes/            # authRoutes, patientRoutes, appointmentRoutes, aiRoutes
-│       ├── services/          # aiService
-│       └── scripts/           # seed.js
+│       ├── routes/            # auth, patients, appointments, dashboard, ai
+│       └── services/          # aiService
 ├── jmeter/                    # Load test plan and CSV results
 ├── zap/                       # Security scan reports and remediation notes
 └── monitoring/                # Prometheus and Grafana configuration
@@ -126,12 +126,23 @@ in a deployed environment.
 
 ### Seeding the Database
 
-The performance work depends on a realistic data volume — roughly 10,000 patient
-records — because an unindexed query over a handful of documents is
-indistinguishable from an indexed one.
+The performance work depends on a realistic data volume. The seed creates
+100,000 patients with around 200,000 appointments and matching clinical notes.
+Ten thousand records proved too few to measure against: the whole collection is
+only 3 MB, so a full scan completed in roughly 40 ms and an index made no
+observable difference.
 
 ```bash
 node backend/scripts/seed.js
+```
+
+Sign in afterwards as `dr.kuteishi@intellicare.ca` with the password
+`Password123!`.
+
+To inspect how MongoDB executes the directory search:
+
+```bash
+node backend/scripts/explain-search.js an
 ```
 
 ### Running the App
