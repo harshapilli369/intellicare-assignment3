@@ -1,0 +1,93 @@
+{
+  "info": {
+    "name": "IntelliCare API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000/api"
+    },
+    {
+      "key": "token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImNsaW5pY2lhbiIsIm5hbWUiOiJUZXN0IERvY3RvciIsImlhdCI6MTc4NDY4NTEwNiwiZXhwIjoxNzg0NzcxNTA2fQ.fKqGA2rb-CAe7S2eTo5NNBFFPULLQwPfvspKUwF1FHQ"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health"
+      }
+    },
+    {
+      "name": "AI",
+      "item": [
+        {
+          "name": "Generate Pre-Appointment Summary",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "url": "{{baseUrl}}/ai/pre-appointment/1"
+          }
+        },
+        {
+          "name": "Generate Post-Appointment Summary",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clinicianNotes\": \"Patient presented with headache and dizziness. BP 150/95. Adjusted Lisinopril dosage from 10mg to 20mg. Advised rest and follow-up in 2 weeks.\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/ai/post-appointment/1"
+          }
+        },
+        {
+          "name": "Get Summary by Appointment",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/ai/summary/1"
+          }
+        },
+        {
+          "name": "Finalize Summary",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clinicianSummary\": \"Edited clinician summary after review.\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/ai/summary/1/finalize"
+          }
+        },
+        {
+          "name": "Get Patient Summaries",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/ai/patient/1/summaries"
+          }
+        }
+      ]
+    }
+  ]
+}
