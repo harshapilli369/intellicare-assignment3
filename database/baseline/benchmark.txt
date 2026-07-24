@@ -1,0 +1,13 @@
+IntelliCare - endpoint benchmark (BASELINE, before optimizations)
+Captured: 2026-07-24 16:39 UTC
+Command: node backend/scripts/benchmark.js 5
+
+http://localhost:5000 - 5 runs per endpoint
+
+endpoint          status      min      avg      max
+----------------------------------------------------
+dashboard stats   200     508 ms  541 ms  555 ms
+patient list      200     181 ms  206 ms  227 ms
+patient search    200     441 ms  473 ms  499 ms
+patient record    200    4909 ms 5081 ms 5184 ms
+appointments      200     309 ms  407 ms  507 ms
