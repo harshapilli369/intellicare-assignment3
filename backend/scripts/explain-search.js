@@ -20,18 +20,25 @@ const run = async () => {
   const indexes = await Patient.collection.indexes();
   console.log(`  indexes:     ${indexes.map((i) => i.name).join(', ')}`);
 
-  const explain = await Patient.find({ name: { $regex: term, $options: 'i' } })
-    .sort({ name: 1 })
-    .limit(20)
-    .explain('executionStats');
+  const report = async (label, query) => {
+    const explain = await Patient.find(query).sort({ name: 1 }).limit(20).explain('executionStats');
+    const s = explain.executionStats;
+    console.log(`\n${label}`);
+    console.log(`  query:               ${JSON.stringify(query)}`);
+    console.log(`  winning stage:       ${explain.queryPlanner.winningPlan.stage}`);
+    console.log(`  documents examined:  ${s.totalDocsExamined}`);
+    console.log(`  index keys examined: ${s.totalKeysExamined}`);
+    console.log(`  documents returned:  ${s.nReturned}`);
+    console.log(`  execution time:      ${s.executionTimeMillis} ms`);
+  };
 
-  const s = explain.executionStats;
-  console.log(`\nQuery: name matches /${term}/i, sorted by name, limit 20`);
-  console.log(`  winning stage:       ${explain.queryPlanner.winningPlan.stage}`);
-  console.log(`  documents examined:  ${s.totalDocsExamined}`);
-  console.log(`  index keys examined: ${s.totalKeysExamined}`);
-  console.log(`  documents returned:  ${s.nReturned}`);
-  console.log(`  execution time:      ${s.executionTimeMillis} ms`);
+  await report('Unindexed - case-insensitive match anywhere in the name', {
+    name: { $regex: term, $options: 'i' },
+  });
+
+  await report('Indexed - anchored match against lowercased name tokens', {
+    nameTokens: { $regex: `^${term.toLowerCase()}` },
+  });
 
   await mongoose.connection.close();
 };

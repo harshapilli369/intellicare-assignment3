@@ -2,15 +2,28 @@ const Patient = require('../models/mongodb/Patient');
 const Appointment = require('../models/mongodb/Appointment');
 const Note = require('../models/mongodb/Note');
 
+// A search term goes into a regular expression, so anything that carries
+// meaning there has to be escaped first. Otherwise a term like ".*" turns the
+// query into a full scan again.
+const escapeRegex = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
 const listPatients = async (req, res, next) => {
   try {
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 20;
     const { search } = req.query;
 
-    const filter = {};
+    const filter = { clinicianId: req.user.id };
     if (search) {
-      filter.name = { $regex: search, $options: 'i' };
+      // Anchored, against lowercased tokens, so the index can be used. Each
+      // word of the term must prefix-match some word of the name, so both
+      // "holl" and "aaron ab" behave the way a user typing a name expects.
+      const terms = search.toLowerCase().split(/\s+/).filter(Boolean);
+      if (terms.length) {
+        filter.$and = terms.map((term) => ({
+          nameTokens: { $regex: `^${escapeRegex(term)}` },
+        }));
+      }
     }
 
     const total = await Patient.countDocuments(filter);
