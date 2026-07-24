@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import { format } from 'date-fns';
 
+// Imported here rather than at the entry point so it ships with this screen's
+// chunk instead of being downloaded by everyone who opens the sign-in page.
+import 'react-datepicker/dist/react-datepicker.css';
+
 import TopBar from '../../components/layout/TopBar';
 import api from '../../services/api';
 
