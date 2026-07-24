@@ -15,6 +15,10 @@ from pathlib import Path
 
 METRICS = [
     ("meanResTime", "Avg (ms)", 0),
+    # Reported alongside the mean because a single stalled third-party call is
+    # enough to move the mean of a small sample without reflecting what a
+    # typical request experienced.
+    ("medianResTime", "Median (ms)", 0),
     ("pct2ResTime", "p95 (ms)", 0),
     ("throughput", "Req/s", 2),
     ("errorPct", "Error %", 2),
@@ -39,11 +43,14 @@ def fmt(value, places):
 
 
 def change(before, after):
-    """Percentage reduction. Positive means the metric improved."""
+    """Signed change in the metric itself.
+
+    Negative means the value fell. For latency that is an improvement; for
+    throughput it is not. The metric decides, not this function.
+    """
     if before == 0:
-        return "n/a"
-    delta = (before - after) / before * 100
-    return f"{delta:+.1f}%".replace("+", "-", 1) if delta < 0 else f"-{delta:.1f}%"
+        return "n/a" if after == 0 else "new"
+    return f"{(after - before) / before * 100:+.1f}%"
 
 
 def single(stats):
