@@ -19,17 +19,23 @@ const listAppointments = async (req, res, next) => {
       scheduledAt: { $gte: start, $lte: end },
     }).sort({ scheduledAt: 1 });
 
-    const rows = [];
-    for (const appointment of appointments) {
-      const patient = await Patient.findOne({ patientId: appointment.patientId });
-      rows.push({
+    // Resolve every patient in one query rather than one per appointment.
+    const patients = await Patient.find(
+      { patientId: { $in: appointments.map((a) => a.patientId) } },
+      { patientId: 1, name: 1 }
+    );
+    const patientsById = new Map(patients.map((p) => [p.patientId, p]));
+
+    const rows = appointments.map((appointment) => {
+      const patient = patientsById.get(appointment.patientId);
+      return {
         appointmentId: appointment.appointmentId,
         scheduledAt: appointment.scheduledAt,
         reason: appointment.reason,
         status: appointment.status,
         patient: patient ? { patientId: patient.patientId, name: patient.name } : null,
-      });
-    }
+      };
+    });
 
     res.json({ success: true, date: start, appointments: rows });
   } catch (err) {

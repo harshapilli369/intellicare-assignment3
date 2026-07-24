@@ -47,13 +47,24 @@ const getPatient = async (req, res, next) => {
 
     const appointments = await Appointment.find({ patientId }).sort({ scheduledAt: -1 });
 
-    const history = [];
-    for (const appointment of appointments) {
-      const notes = await Note.find({ appointmentId: appointment.appointmentId }).sort({
-        createdAt: -1,
-      });
-      history.push({ appointment, notes });
+    // Fetch every note for these appointments in one query and group them here.
+    // Reading them per appointment meant a round trip for each visit, so a
+    // patient with a long history cost as many round trips as they had visits.
+    const notes = await Note.find({
+      appointmentId: { $in: appointments.map((a) => a.appointmentId) },
+    }).sort({ createdAt: -1 });
+
+    const notesByAppointment = new Map();
+    for (const note of notes) {
+      const existing = notesByAppointment.get(note.appointmentId);
+      if (existing) existing.push(note);
+      else notesByAppointment.set(note.appointmentId, [note]);
     }
+
+    const history = appointments.map((appointment) => ({
+      appointment,
+      notes: notesByAppointment.get(appointment.appointmentId) || [],
+    }));
 
     res.json({ success: true, patient, history });
   } catch (err) {
