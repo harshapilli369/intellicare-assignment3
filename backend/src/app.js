@@ -2,6 +2,7 @@ require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
@@ -17,6 +18,7 @@ const errorHandler = require('./middleware/errorHandler');
 const app = express();
 
 app.use(helmet());
+app.use(compression());
 app.use(morgan('dev'));
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use(express.json());
