@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-canvas font-sans text-slate-900 antialiased;
+}
+
+.card {
+  @apply rounded-2xl border border-brand bg-white p-6;
+}
+
+.card-plain {
+  @apply rounded-2xl bg-white p-6;
+}
+
+.pill {
+  @apply rounded-md bg-brand-50 px-3 py-1 text-sm font-medium text-slate-700;
+}
+
+.btn-primary {
+  @apply rounded-md bg-brand px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-dark;
+}
+
+.btn-outline {
+  @apply rounded-lg border-2 border-brand px-4 py-2 text-sm font-semibold text-brand transition hover:bg-brand-50;
+}
