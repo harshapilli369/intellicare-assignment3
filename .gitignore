@@ -23,6 +23,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+.claude/
 
 # Testing
 coverage/
@@ -33,3 +34,10 @@ backend/uploads/
 # Cache
 .npm
 .eslintcache
+
+# Documents and design assets - kept locally, not in the repo
+*.pdf
+Figma Design Adv web Dev/
+Assignment-3/*.md
+Assignment-3/*.txt
+backend/src/AI_MODULE_PLAN.md
