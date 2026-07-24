@@ -1,25 +1,50 @@
 const aiService = require('../services/aiService');
+const Patient = require('../models/mongodb/Patient');
+const Appointment = require('../models/mongodb/Appointment');
+const Note = require('../models/mongodb/Note');
 
-const buildMockContext = (appointmentId) => ({
-  patientName: 'Test Patient',
-  dateOfBirth: '1980-01-01',
-  medicalHistory: ['Hypertension', 'Type 2 Diabetes'],
-  medications: ['Metformin 500mg', 'Lisinopril 10mg'],
-  allergies: ['Penicillin'],
-  previousNotes: ['Patient reported fatigue at last visit. BP was 140/90.'],
-  intakeForm: { symptoms: 'Headache and dizziness for 3 days', severity: 'moderate' },
-  appointmentReason: 'Follow-up',
-});
+const buildContext = async (appointmentId) => {
+  const appointment = await Appointment.findOne({ appointmentId });
+  if (!appointment) return null;
+
+  const patient = await Patient.findOne({ patientId: appointment.patientId });
+  if (!patient) return null;
+
+  const earlier = await Appointment.find({
+    patientId: patient.patientId,
+    scheduledAt: { $lt: appointment.scheduledAt },
+  })
+    .sort({ scheduledAt: -1 })
+    .limit(5);
+
+  const previousNotes = [];
+  for (const visit of earlier) {
+    const notes = await Note.find({ appointmentId: visit.appointmentId });
+    notes.forEach((note) => previousNotes.push(note.body));
+  }
+
+  return {
+    patientId: patient.patientId,
+    patientName: patient.name,
+    sex: patient.sex,
+    dateOfBirth: patient.dateOfBirth,
+    medicalHistory: patient.conditions,
+    medications: patient.medications,
+    allergies: patient.allergies,
+    previousNotes,
+    appointmentReason: appointment.reason,
+  };
+};
 
 const generatePreSummary = async (req, res, next) => {
   try {
     const { appointmentId } = req.params;
 
-    // TODO: replace mock with real data once patient/appointment modules are ready
-    const context = buildMockContext(appointmentId);
+    const context = await buildContext(Number(appointmentId));
+    if (!context) return res.status(404).json({ message: 'Appointment not found' });
 
     const result = await aiService.generatePreSummary({
-      patientId: context.patientId || 1,
+      patientId: context.patientId,
       appointmentId: Number(appointmentId),
       context,
     });
@@ -34,14 +59,13 @@ const generatePostSummary = async (req, res, next) => {
   try {
     const { appointmentId } = req.params;
 
-    // TODO: replace mock with real data once notes/appointment modules are ready
-    const context = {
-      ...buildMockContext(appointmentId),
-      clinicianNotes: req.body.clinicianNotes || 'Patient presented with headache and dizziness. BP 150/95. Adjusted Lisinopril dosage.',
-    };
+    const base = await buildContext(Number(appointmentId));
+    if (!base) return res.status(404).json({ message: 'Appointment not found' });
+
+    const context = { ...base, clinicianNotes: req.body.clinicianNotes || '' };
 
     const result = await aiService.generatePostSummary({
-      patientId: context.patientId || 1,
+      patientId: context.patientId,
       appointmentId: Number(appointmentId),
       context,
     });
