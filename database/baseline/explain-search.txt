@@ -1,0 +1,16 @@
+IntelliCare - patient directory query plan (BASELINE, before indexing)
+Captured: 2026-07-24 15:36 UTC
+Command: node backend/scripts/explain-search.js an
+
+Collection: patients
+  documents:   100000
+  avg doc size: 338 bytes
+  data size:   32.3 MB
+  indexes:     _id_
+
+Query: name matches /an/i, sorted by name, limit 20
+  winning stage:       SORT
+  documents examined:  100000
+  index keys examined: 0
+  documents returned:  20
+  execution time:      202 ms

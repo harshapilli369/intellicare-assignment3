@@ -6,13 +6,15 @@ An AI-Assisted Clinical Workflow Management Platform for reducing administrative
 
 ## Assignment 3 — Performance, Security and Monitoring
 
-All artifacts for this assignment live in three top-level folders, each with its
-own README explaining the contents and how to reproduce the results.
+All artifacts for this assignment live in top-level folders named after the tool
+that produced them, each with its own README explaining the contents and how to
+reproduce the results.
 
 | Deliverable | Location |
 |-------------|----------|
 | JMeter test plan, baseline and optimized results | [`jmeter/`](jmeter/) |
 | Lighthouse rendering measurements, before and after | [`lighthouse/`](lighthouse/) |
+| MongoDB query plans, before and after indexing | [`database/`](database/) |
 | OWASP ZAP scan reports and remediation evidence | [`zap/`](zap/) |
 | Prometheus scrape config and Grafana dashboards | [`monitoring/`](monitoring/) |
 
@@ -82,7 +84,9 @@ intellicare-assignment3/
 │       ├── models/mongodb/    # User, Patient, Appointment, Note, AISummary
 │       ├── routes/            # auth, patients, appointments, dashboard, ai
 │       └── services/          # aiService
-├── jmeter/                    # Load test plan and CSV results
+├── jmeter/                    # Load test plan, CSV results, HTML dashboards
+├── lighthouse/                # Rendering measurements, before and after
+├── database/                  # MongoDB query plans, before and after indexing
 ├── zap/                       # Security scan reports and remediation notes
 └── monitoring/                # Prometheus and Grafana configuration
 ```
