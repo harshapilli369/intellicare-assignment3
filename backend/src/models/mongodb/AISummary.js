@@ -14,6 +14,9 @@ const aiSummarySchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// The patient view lists a patient's finalized summaries newest first.
+aiSummarySchema.index({ patientId: 1, finalized: 1, createdAt: -1 });
+
 aiSummarySchema.statics.hashInput = (context) => {
   return crypto.createHash('sha256').update(JSON.stringify(context)).digest('hex');
 };

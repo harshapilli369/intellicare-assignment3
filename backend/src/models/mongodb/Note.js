@@ -10,4 +10,7 @@ const noteSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// Notes are always read for a set of appointments, newest first.
+noteSchema.index({ appointmentId: 1, createdAt: -1 });
+
 module.exports = mongoose.model('Note', noteSchema);
